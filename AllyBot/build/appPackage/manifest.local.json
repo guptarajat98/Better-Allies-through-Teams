@@ -1,0 +1,71 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.11",
+    "version": "1.0.0",
+    "id": "8a70be06-91ab-427f-acce-6cdd4915651c",
+    "packageName": "com.microsoft.teams.extension",
+    "developer": {
+        "name": "Teams App, Inc.",
+        "websiteUrl": "https://www.example.com",
+        "privacyUrl": "https://www.example.com/privacy",
+        "termsOfUseUrl": "https://www.example.com/termsofuse"
+    },
+    "icons": {
+        "color": "resources/color.png",
+        "outline": "resources/outline.png"
+    },
+    "name": {
+        "short": "AllyBot-FHL",
+        "full": "AllyBot-FHL"
+    },
+    "description": {
+        "short": "Short description of AllyBot-FHL",
+        "full": "Full description of AllyBot-FHL"
+    },
+    "accentColor": "#FFFFFF",
+    "bots": [
+        {
+            "botId": "79c9a2b7-6264-43d6-90a2-f5928ba8a48c",
+            "scopes": [
+                "personal",
+                "team",
+                "groupchat"
+            ],
+            "supportsFiles": false,
+            "isNotificationOnly": false,
+            "commandLists": [
+                {
+                    "scopes": [
+                        "personal",
+                        "team",
+                        "groupchat"
+                    ],
+                    "commands": [
+                        {
+                            "title": "welcome",
+                            "description": "Resend welcome card of this Bot"
+                        },
+                        {
+                            "title": "learn",
+                            "description": "Learn about Adaptive Card and Bot Command"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "composeExtensions": [],
+    "configurableTabs": [],
+    "staticTabs": [],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "b063-2405-201-4010-707f-2da0-c123-a176-c13.ngrok.io"
+    ],
+    "webApplicationInfo": {
+        "id": "fd00f752-e7b4-4fce-9124-3fc9007e39a4",
+        "resource": "api://botid-79c9a2b7-6264-43d6-90a2-f5928ba8a48c"
+    }
+}

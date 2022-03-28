@@ -1,0 +1,71 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.11",
+    "version": "1.0.0",
+    "id": "d9fbcf2b-ee11-4ed2-8b42-9906c43115c2",
+    "packageName": "com.microsoft.teams.extension",
+    "developer": {
+        "name": "Teams App, Inc.",
+        "websiteUrl": "https://www.example.com",
+        "privacyUrl": "https://www.example.com/privacy",
+        "termsOfUseUrl": "https://www.example.com/termsofuse"
+    },
+    "icons": {
+        "color": "resources/color.png",
+        "outline": "resources/outline.png"
+    },
+    "name": {
+        "short": "AllyBot",
+        "full": "Full name for AllyBot"
+    },
+    "description": {
+        "short": "Short description of AllyBot",
+        "full": "Full description of AllyBot"
+    },
+    "accentColor": "#FFFFFF",
+    "bots": [
+        {
+            "botId": "51733f57-f6d8-433f-af46-95b845a25233",
+            "scopes": [
+                "personal",
+                "team",
+                "groupchat"
+            ],
+            "supportsFiles": false,
+            "isNotificationOnly": false,
+            "commandLists": [
+                {
+                    "scopes": [
+                        "personal",
+                        "team",
+                        "groupchat"
+                    ],
+                    "commands": [
+                        {
+                            "title": "welcome",
+                            "description": "Resend welcome card of this Bot"
+                        },
+                        {
+                            "title": "learn",
+                            "description": "Learn about Adaptive Card and Bot Command"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "composeExtensions": [],
+    "configurableTabs": [],
+    "staticTabs": [],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "allybotfhlbot.azurewebsites.net"
+    ],
+    "webApplicationInfo": {
+        "id": "1e9cbeae-4c97-4ee0-a274-9b4c4f6306c9",
+        "resource": "api://botid-51733f57-f6d8-433f-af46-95b845a25233"
+    }
+}
